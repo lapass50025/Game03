@@ -21,10 +21,8 @@ int InitTayoObject(void)
 
 
 
-    // g_tayo.nX = COLS / 2 - strlen(g_tayoShape[0]) / 2;
-    // g_tayo.nY = LINES / 2;
-    g_tayo.nX = 20;
-    g_tayo.nY = 20;
+    g_tayo.nX = COLS / 2 - strlen(g_tayoShape[0]) / 2;
+    g_tayo.nY = LINES / 2;
     g_tayo.nWidth = strlen(g_tayoShape[0]);
     g_tayo.nHeight = 2;
     g_tayo.pShape = g_tayoShape;
@@ -55,12 +53,15 @@ int GameStart(void)
 
 
 
+    // 터미널 초기화하기
+    initscr();
+
     // 변수 초기화하기
     InitTayoObject();
     pTayoObj = GetTayoObject();
 
-    // 터미널 초기화하기
-    initscr();
+    // 그리기
+    DrawObject(pTayoObj->pShape, pTayoObj->nX, pTayoObj->nY, pTayoObj->nWidth, pTayoObj->nHeight);
 
     // 커서 숨기기
     curs_set(0);
