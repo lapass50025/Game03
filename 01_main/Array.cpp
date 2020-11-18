@@ -5,8 +5,8 @@
 
 
 /*
- * ÇÔ ¼ö ¸í : CreateArray
- * ¼³    ¸í : 2Â÷¿ø µ¿Àû ¸Ş¸ğ¸® ÇÒ´ç (nRow x nCol)
+ * í•¨ ìˆ˜ ëª… : CreateArray
+ * ì„¤    ëª… : 2ì°¨ì› ë™ì  ë©”ëª¨ë¦¬ í• ë‹¹ (nRow x nCol)
  */
 void CreateArray(char ***pData, char nRow, char nCol)
 {
@@ -24,8 +24,8 @@ void CreateArray(char ***pData, char nRow, char nCol)
 }
 
 /*
- * ÇÔ ¼ö ¸í : DeleteArray
- * ¼³    ¸í : µ¿Àû ¸Ş¸ğ¸® ÇØÁ¦
+ * í•¨ ìˆ˜ ëª… : DeleteArray
+ * ì„¤    ëª… : ë™ì  ë©”ëª¨ë¦¬ í•´ì œ
  */
 void DeleteArray(char ***pData, int nRow)
 {
