@@ -13,16 +13,19 @@ int FillCharacter(char ch, int nX, int nY, int nWidth, int nHeight)
 {
     int i = 0;
     int j = 0;
+    int nRet = 1;
 
 
 
-    for (i = 0; i < nHeight, i++)
+    for (i = 0; i < nHeight; i++)
     {
-        for (j = 0; j < nWidth; i++)
+        for (j = 0; j < nWidth; j++)
         {
-            mvaddch(i, j, ch);
+            mvaddch(i + nY, j + nX, ch);
         }
     }
+
+    return nRet;
 }
 
 
@@ -36,13 +39,17 @@ int DrawObject(char **p, int nX, int nY, int nWidth, int nHeight)
     int i = 0;
     int j = 0;
 
+    int nRet = 1;
 
 
-    for (i = 0; i < nHeight, i++)
+
+    for (i = 0; i < nHeight; i++)
     {
-        for (j = 0; j < nWidth; i++)
+        for (j = 0; j < nWidth; j++)
         {
-            mvaddch(i, j, p[i][j]);
+            mvaddch(i + nY, j + nX, p[i][j]);
         }
     }
+
+    return nRet;
 }

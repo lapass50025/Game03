@@ -12,7 +12,7 @@ int main()
 {
         initscr();
         curs_set(0);
-        DrawObject(test, 0, 0, 5, 2);
+        DrawObject(test, 20, 20, 5, 2);
         getch();
         endwin();
 
