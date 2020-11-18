@@ -3,6 +3,7 @@
 
 #include "Array.h"
 #include "Draw.h"
+#include "Game.h"
 
 #endif
 

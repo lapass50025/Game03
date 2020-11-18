@@ -4,17 +4,8 @@
 
 
 
-char *test[6] = { "*****", "*@*@*" };
-
-
-
 int main()
 {
-        initscr();
-        curs_set(0);
-        DrawObject(test, 20, 20, 5, 2);
-        getch();
-        endwin();
-
+        GameStart();
         return 0;
 }
